@@ -1,9 +1,7 @@
 ﻿#Connect-AzureRmAccount
-Select-AzureRmSubscription -Subscription "8f87f15a-2f4b-4459-9410-315180be4dea"
+#get-AzureRmSubscription
+#Select-AzureRmSubscription -Subscription "xxxxxxxxxx-xxxxx-xxxxxx-xxxxxxx-xxxxxxxx"
 
-$resourceGroup = "ToDelResGroup"
-$location = "eastus"
-$Path = "C:\Projects\AzureDevScripts\AzureNetwork.json"
 #############################################################################
 #                             
 #   Function create vNet and subnet in Azure    
@@ -63,4 +61,4 @@ function Create-AzureNetwork {
     } # End ForEach vNetSubnets
 } #End Function Create-AzureNetwork
 
-Create-AzureNetwork -Path $Path -ResourceGroup $resourceGroup -location $location
+#Create-AzureNetwork -Path $Path -ResourceGroup $resourceGroup -location $location

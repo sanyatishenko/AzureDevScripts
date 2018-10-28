@@ -25,6 +25,4 @@ function Create-ResourceGroup {
     {
         Write-Host "Selected resource group: $resourceGroup"
     }
-
-
 }
