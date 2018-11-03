@@ -1,5 +1,5 @@
-Connect-AzureRmAccount
-get-AzureRmSubscription
+#Connect-AzureRmAccount
+#get-AzureRmSubscription
 #Select-AzureRmSubscription -Subscription "xxxxxxxxxx-xxxxx-xxxxxx-xxxxxxx-xxxxxxxx"
 
 $resourceGroup = "ToDelResGroup"

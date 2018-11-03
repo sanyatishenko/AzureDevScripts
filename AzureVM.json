@@ -1,0 +1,48 @@
+[{
+    "VMName" : "TestVM01",
+    "Location" : "eastus",
+    "ResourceGroup" : "ToDelResGroup",
+    "VMSize" : "Standard_B2s",
+    "NetworkAdapters" : [
+        {
+            "NicName" : "Nic1",
+            "vNetName" : "TestNetwork",
+            "SubNetName" : "SubNet1",
+            "PublicIP" : true,
+            "Primary" : true
+        },
+        {
+            "NicName" : "Nic2",
+            "vNetName" : "TestNetwork",
+            "SubNetName" : "SubNet2",
+            "PublicIP" : false,
+            "Primary" : false
+        }
+    ],
+    "OSDisk" : {
+        "DiscName" : "_DiskOS",
+        "OSType" : "Windows",
+        "StorageAccountType" : "StandardSSD_LRS"
+    },
+    "OS" : {
+        "TimeZone" : "FLE Standard Time",
+        "PublisherName" : "MicrosoftWindowsServer",
+        "Offer" : "WindowsServer",
+        "Skus" : "2016-Datacenter",
+        "Version" : "latest"
+    },
+    "DataDisk" : [
+        {
+            "DiskName" : "_Data1",
+            "DiskSizeGB" : 32,
+            "Lun" : 1,
+            "StorageAccountType" : "StandardSSD_LRS"
+        },
+        {
+            "DiskName" : "_Data2",
+            "DiskSizeGB" : 10,
+            "Lun" : 2,
+            "StorageAccountType" : "Standard_LRS"
+        }
+    ]
+}]
